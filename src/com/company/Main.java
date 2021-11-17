@@ -9,12 +9,12 @@ public class Main
         for (int i = 1; i < array.length; i++)
         {
             int val = array[i];
-            int j = i - 1;
+            int j;
             for (j = i - 1; j >= 0 && array[j] > val; j--)
                 array[j + 1] = array[j];
             array[j + 1] = val;
         }
         for (int a : array)
-            System.out.println (a + " ");
+            System.out.print (a + " ");
     }
 }
